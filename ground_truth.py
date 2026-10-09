@@ -1469,9 +1469,7 @@ GROUND_TRUTH = {
         "Chau_Gia_Khang_CV_.pdf": {
             "name": "Châu Gia Khang",
             "education_org": ["University of Information Technology (UIT), VNU-HCM"],
-            # CV chỉ ghi chức danh "Backend Developer (Fresher)" / "Fullstack
-            # Developer Intern", không ghi tên công ty -- để trống theo đúng
-            # dữ liệu gốc trong file Excel.
+  
             "experience_org": [],
             "skills": [
                 "TypeScript", "JavaScript", "SQL", "Golang",
@@ -1486,9 +1484,7 @@ GROUND_TRUTH = {
                 "Transactional Outbox", "CQRS", "Event-driven", "Idempotency", "Strangler Fig", "Two-stage retrieval",
             ],
         },
-        # "NGUYỄN THỊ MỸ CHÂU.docx": {
-        #     "name": "NGUYỄN THỊ MỸ CHÂU",
-        #     "education_org": ["UNIVERSITY OF SOCIAL SCIENCES AND HUMANITIES"],
+
         "NGUYỄN THỊ MỸ CHÂU.docx": {
             "name": "NGUYỄN THỊ MỸ CHÂU",
             "education_org": [
@@ -1642,9 +1638,7 @@ GROUND_TRUTH = {
             "Problem Solving", "Teamwork", "Self Learning", "Work Under Pressure", "Adaptability",
         ],
     },
-    # Cùng nội dung với Phạm Thái Minh.docx nhưng bản PDF bị mất phần header:
-    # CV hoàn toàn không có tên -> đáp án đúng là hệ thống không tìm ra tên
-    # (aggregator.py trả "Không xác định" khi không có PERSON nào).
+
     "resume_selectable_text.pdf": {
         "name": "Không xác định",
         "education_org": ["Ho Chi Minh University of Technology (HCMUT)"],
@@ -1665,7 +1659,7 @@ GROUND_TRUTH = {
         "experience_org": [],  # chỉ có Projects
         "skills": [
             "C#", "C++", "Java",
-            # giữ nguyên chính tả gốc trong CV ("ASP.NET & Core", "OOP.NET Web API")
+   
             "ASP.NET & Core", "RESTful API", "EF Core", "OOP.NET Web API", "MediatR", "JWT",
             "Clean Architecture", "Microservices", "Event-Driven Architecture", "RabbitMQ",
             "Docker", "Git", "GitHub", "VS Code",
@@ -1677,8 +1671,7 @@ GROUND_TRUTH = {
     "Le Nguyen Tuong Linh.docx": {
         "name": "Le Nguyen Tuong Linh",
         "education_org": ["HCMC University of Technology, VNU-HCM"],
-        # Thực tập tại DDS Management nằm lẫn trong mục PROJECT, không có
-        # mục Experience riêng -- vẫn tính là nơi làm việc thật.
+
         "experience_org": ["DDS Management Vietnam Co."],
         "skills": [
             "TypeScript", "JavaScript", "Python", "C/C++", "SQL",
@@ -1751,9 +1744,7 @@ GROUND_TRUTH = {
     "Hoang_Dinh_Trung_CV_selectable.pdf": {
         "name": "Hoang Dinh Trung",
         "education_org": ["University of Information Technology VNU-HCM"],
-        # DTG Corp là nơi thực tập. Ba tổ chức sau nằm dưới mục "ORGANIZATIONAL
-        # & VOLUNTEER EXPERIENCE" (segmenter.py gộp mục này vào experience)
-        # nên cũng tính là tổ chức trong phần kinh nghiệm.
+
         "experience_org": [
             "DTG Corp", "UIT Student Ambassador", "WebDev Studio", "National Australia Bank",
         ],
@@ -1768,7 +1759,7 @@ GROUND_TRUTH = {
         ],
     },
  
-    # ====================== CV bổ sung: Marketing / Kinh doanh / Nhân sự / Thiết kế ======================
+
     "GRAPHIC DESIGNER.docx": {
         "name": "NGUYỄN THẾ ANH",
         "education_org": ["Academy of Journalism and Communication"],
@@ -1789,8 +1780,7 @@ GROUND_TRUTH = {
     "DANG NHU TRUC.docx": {
         "name": "DANG NHU TRUC",
         "education_org": ["UNIVERSITY OF FINANCE – MARKETING", "FPT POLYTECHNIC COLLEGE"],
-        # Mục "SELECTED EVENT EXPERIENCE" (tên sự kiện, không phải nơi làm việc)
-        # không tính vào đáp án.
+
         "experience_org": [
             "BEETATS STUDIO",
             "NGOI SAO PRESCHOOL AND PRIMARY SCHOOL",
@@ -1806,7 +1796,7 @@ GROUND_TRUTH = {
     "NGUYỄN THỊ MINH TRANG.docx": {
         "name": "NGUYỄN THỊ MINH TRANG",
         "education_org": ["HCMC COLLEGES OF ECONOMICS"],
-        # "FREELANCE HEAD HUNTER" không ghi tên công ty -> không tính
+
         "experience_org": ["PICKDI", "VIETNAM SAFETY", "HONE CARE - PROFA VIETNAM"],
         "skills": [
             "Interpretation", "Communication", "Problem-solving",
@@ -1815,7 +1805,7 @@ GROUND_TRUTH = {
             "MS Office", "Canva (basic)", "Capcut (basic)",
         ],
     },
-    # CV viết kỹ năng dạng câu mô tả -> việc tách thành từng mục mang tính chủ quan
+
     "DINH THI HONG ANH.docx": {
         "name": "DINH THI HONG ANH",
         "education_org": ["Thuong Mai University"],
@@ -1845,8 +1835,7 @@ GROUND_TRUTH = {
     "NGUYỄN THỊ MINH ANH.docx": {
         "name": "NGUYỄN THỊ MINH ANH",
         "education_org": ["Van Lang College"],
-        # FPT Telecom, Cocoon, Haravan chỉ là đối tác/khách hàng của các dự án,
-        # CV không có mục kinh nghiệm làm việc.
+
         "experience_org": [],
         "skills": [
             "Omnichannel Campaigns", "TikTok & Video Marketing", "Advertising",
@@ -1925,8 +1914,7 @@ GROUND_TRUTH = {
             "Time Management", "Teamwork",
         ],
     },
-    # Các dự án ghi trong mục WORK EXPERIENCE đều có "Customer" là CodeGym
-    # Software -> coi CodeGym Software là tổ chức trong phần kinh nghiệm.
+
     "LÊ MINH QUÂN.docx": {
         "name": "LÊ MINH QUÂN",
         "education_org": ["CMC University"],
@@ -1938,9 +1926,7 @@ GROUND_TRUTH = {
             "Git", "GitHub",
         ],
     },
-    # Không có mục Education. AKAT Investment Blog và Sencam là dự án freelance
-    # (không phải tên công ty), VinaDAO/Timeless Wallet/Mozanio/Celeb Confirmed
-    # là dự án thực hiện tại Zien Solutions.
+
     "NGUYỄN MINH KHOA.docx": {
         "name": "NGUYỄN MINH KHOA",
         "education_org": [],
@@ -1998,8 +1984,7 @@ GROUND_TRUTH = {
             "Figma", "FigJam", "Adobe Illustrator", "Adobe Photoshop", "Canva",
         ],
     },
-    # Dòng "Certifications:" nằm trong mục Technical Skills của CV nhưng là
-    # chứng chỉ, không tính là kỹ năng.
+
     "PHAN QUỐC THẮNG.docx": {
         "name": "PHAN QUỐC THẮNG",
         "education_org": ["Ho Chi Minh City University of Technology (HUTECH)"],
@@ -2047,111 +2032,6 @@ GROUND_TRUTH = {
             "Ability to Work Independently and Collaboratively",
         ],
     },
- 
-    # ====================== 7 CV đã chuyển sang bản tiếng Anh ======================
-    # Bảng kỹ năng của Quỳnh Anh và Bảo Trâm: cột nhãn mới là tên kỹ năng, cột
-    # còn lại là câu mô tả; mục Skills của Khánh Linh viết dạng câu. Cách tách
-    # thành từng mục của 3 CV này mang tính chủ quan, độ tin cậy thấp hơn.
-    "TRẦN THỊ LAN ANH (English CV).docx": {
-        "name": "TRẦN THỊ LAN ANH",
-        "education_org": ["Thuongmai University"],
-        "experience_org": ["My Candy Vietnam Co., Ltd", "Glamor International Fashion JSC"],
-        "skills": [
-            "Word", "Excel", "PowerPoint", "Google Docs", "Sheets", "Forms",
-            "Communication", "Teamwork", "Adaptability", "Critical thinking",
-            "Canva", "Capcut", "ChatGPT", "Midjourney",
-        ],
-    },
-    "ĐỖ KHÁNH LINH (English CV).docx": {
-        "name": "ĐỖ KHÁNH LINH",
-        "education_org": [
-            "Foreign Trade University",
-            "Hoang Van Thu High School for the Gifted (Phu Tho)",
-        ],
-        "experience_org": [],  # trợ giảng, gia sư, dịch tự do: không ghi tên đơn vị
-        "skills": [
-            "basic MS Office applications",
-            "Hard-working", "responsible", "ambitious", "fast learner", "highly adaptable",
-            "Strong teamwork and problem-solving skills",
-            "Willing to work under heavy workloads and high pressure",
-        ],
-    },
-    # Private English tutor và Freelance Interpreter không ghi tên đơn vị.
-    "NGUYỄN THỊ QUỲNH ANH (English CV).docx": {
-        "name": "NGUYỄN THỊ QUỲNH ANH",
-        "education_org": ["Hanoi Open University"],
-        "experience_org": [
-            "Family Technology Co., Ltd - FTECH CO., LTD",
-            "TLH Education Co., Ltd / THE LANGUAGE HUB - TLH COMPANY LIMITED",
-        ],
-        "skills": [
-            "English and Translation & Interpreting", "Teaching & Material Development",
-            "Communication & Coordination", "Organization & Information Processing",
-            "AI & Digital Tools",
-        ],
-    },
-    "LÊ NGỌC BẢO TRÂM (English CV).docx": {
-        "name": "LÊ NGỌC BẢO TRÂM",
-        "education_org": ["FPT Polytechnic College", "University of Economics Ho Chi Minh City (UEH)"],
-        "experience_org": ["NEOM SPACE"],
-        "skills": [
-            "Word", "Excel", "PowerPoint", "WordPress", "Photoshop",
-            "Google Ads", "TikTok Ads", "Facebook Ads", "Canva", "CapCut",
-        ],
-    },
-    "PHẠM THỊ THANH HƯƠNG (English CV).docx": {
-        "name": "PHẠM THỊ THANH HƯƠNG",
-        "education_org": [
-            "MILITARY UNIVERSITY OF CULTURE AND ARTS",
-            "COLLEGE OF TELEVISION",
-            "SAGE ACADEMY - INSTITUTE OF MARKETING & BUSINESS",
-            "PTI EDUCATION TRAINING GROUP",
-        ],
-        "experience_org": [
-            "NGOC DIEP TOURISM SERVICES INVESTMENT AND DEVELOPMENT CO., LTD",
-            "LONG TUAN FOOD JSC",
-            "HA LONG BEER AND BEVERAGE JSC",
-            "TAM VIET SOFT SKILLS CENTER",
-            "QUANG NINH RADIO & TELEVISION STATION",
-        ],
-        "skills": [
-            "Editing & creative writing", "Content planning", "Scriptwriting", "Storytelling",
-            "Canva", "CapCut", "Filming/photography", "Basic video editing",
-            "Visual & cinematographic mindset",
-            "Internal MC", "Event organization", "Campaign execution", "Program coordination",
-        ],
-    },
-    # CV không ghi tên trường. Giống LÊ MINH QUÂN: các dự án trong mục WORK
-    # EXPERIENCE có khách hàng là CodeGym Software.
-    "VŨ HOÀNG LONG (English CV).docx": {
-        "name": "VŨ HOÀNG LONG",
-        "education_org": [],
-        "experience_org": ["CodeGym Software"],
-        "skills": [
-            "Node.js", "JavaScript", "TypeScript", "Java",
-            "NestJS", "Spring Boot",
-            "PostgreSQL", "MySQL", "SQL Server",
-            "Git", "GitHub / GitLab",
-            "Antigravity", "Cursor", "GitHub Copilot", "Claude Code",
-        ],
-    },
-    "ĐỖ MINH TRÍ (English CV).docx": {
-        "name": "ĐỖ MINH TRÍ",
-        "education_org": ["Hoa Binh University"],
-        "experience_org": ["HC-Hiteck JSC"],
-        "skills": [
-            "Flutter", "Dart", "Riverpod", "go_router", "Responsive UI", "fl_chart", "flutter_tts",
-            "Claude Code", "Antigravity CLI", "MCP", "AI code review",
-            "Firebase Auth", "Cloud Firestore", "REST API",
-            "ESP32-C3", "BLE", "C++",
-            "Firebase Firestore", "MySQL",
-            "Git", "GitHub", "Linux",
-        ],
-    },
- 
-    # ====================== 7 CV đã chuyển sang bản tiếng Anh ======================
-    # Bảng kỹ năng của Quỳnh Anh, và các mục Skills của Khánh Linh, Lan Anh viết
-    # dạng câu mô tả/nhãn nên cách tách mục mang tính chủ quan, độ tin cậy thấp hơn.
     "TRẦN THỊ LAN ANH (English CV).docx": {
         "name": "TRẦN THỊ LAN ANH",
         "education_org": ["Thuongmai University"],
@@ -2176,8 +2056,7 @@ GROUND_TRUTH = {
             "Willing to work under heavy workloads and high pressure",
         ],
     },
-    # Private English tutor và Freelance Interpreter không phải tên đơn vị.
-    # Bảng Skills ghi tên nhóm kỹ năng + câu mô tả; đáp án lấy tên 5 nhóm.
+ 
     "NGUYỄN THỊ QUỲNH ANH (English CV).docx": {
         "name": "NGUYỄN THỊ QUỲNH ANH",
         "education_org": ["Hanoi Open University"],
@@ -2200,8 +2079,7 @@ GROUND_TRUTH = {
             "Google Ads", "TikTok Ads", "Facebook Ads", "Canva", "CapCut",
         ],
     },
-    # CV không ghi tên trường. Giống LÊ MINH QUÂN: dự án trong mục WORK
-    # EXPERIENCE có Client là CodeGym Software.
+
     "VŨ HOÀNG LONG (English CV).docx": {
         "name": "VŨ HOÀNG LONG",
         "education_org": [],
